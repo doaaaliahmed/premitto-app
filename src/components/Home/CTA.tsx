@@ -17,10 +17,10 @@ const CTA = () => {
         }}
          className="my-28 py-0 pt-10 mx-auto w-11/12 max-w-screen-xl flex flex-col px-2 max-sm:pt-4 sm:pl-8 sm:flex-row items-center justify-center gap-10 shadow-2xl rounded-xl bg-gradient-to-r from-[#912980] via-[#d68253] to-[#fcb43a]">
       <div className="w-full sm:w-1/2 max-w-lg">
-        <h2 className="max-sm:text-2xl text-4xl text-gray-300/75 font-medium lg:text-5xl lg:leading-[3rem]">
+        <h4 className="max-sm:text-2xl text-4xl text-gray-300/75 font-medium lg:text-5xl lg:leading-[3rem]">
           Enjoy the experience of shopping more and{" "}
           <span className="text-white">paying less!</span>
-        </h2>
+        </h4>
         <div className="mt-6">
           <div className=" flex items-center justify-start gap-3 mt-3 ">
             <Link href="" className=" block  hover:scale-105 transition duration-200 ease">

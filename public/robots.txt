@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+
+Sitemap: https://premitto-alkjk4hpq-doaaaliahmed.vercel.app/

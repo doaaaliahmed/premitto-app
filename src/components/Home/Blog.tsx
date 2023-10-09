@@ -55,9 +55,9 @@ const Blog = () => {
           <button className="w-fit px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">
             Our Blog
           </button>
-          <h1 className="text-2xl font-semibold text-gray-800  lg:text-4xl max-w-lg !leading-tight">
+          <h3 className="text-2xl font-semibold text-gray-800  lg:text-4xl max-w-lg !leading-tight">
             A 360<sup>o</sup> tour with the <br></br> best places for you!
-          </h1>
+          </h3>
         </div>
         <p className="mt-4 text-gray-500 text-sm w-64 leading-relaxed ">
           Discover trends and news about the best restaurants, hotels, and
@@ -133,9 +133,9 @@ const Blog = () => {
                     {item.date}
                   </span>
                   <div className="flex items-center justify-between ">
-                    <h3 className="text-lg text-gray-800  font-bold">
+                    <legend className="text-lg text-gray-800  font-bold">
                       {item.title}
-                    </h3>
+                    </legend>
                     <Link
                       href={item.href}
                       className="transition duration-150 hover:scale-110 ease-in-out"

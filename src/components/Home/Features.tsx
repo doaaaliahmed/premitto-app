@@ -49,9 +49,9 @@ const Features = () => {
         <button className="mb-10 px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">
           Discover the best discounts and offers nears you
         </button>
-        <h1 className="text-2xl font-semibold text-gray-800  lg:text-5xl  ">
+        <h3 className="text-2xl font-semibold text-gray-800  lg:text-5xl  ">
           Enjoy the art of purchasing <br></br> and saving!
-        </h1>
+        </h3>
 
         <p className="mt-4 text-gray-500 xl:mt-6 max-w-xl">
           Our user-friendly mobile app lets you find deals and offers in-store
@@ -84,9 +84,9 @@ const Features = () => {
                   alt={feature.title}
                 />
 
-                <h1 className="text-xl font-medium text-gray-700 capitalize">
+                <legend className="text-xl font-medium text-gray-700 capitalize">
                   {feature.title}
-                </h1>
+                </legend>
 
                 <p className="text-gray-500 ">{feature.text}</p>
               </motion.li>

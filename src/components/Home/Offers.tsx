@@ -29,9 +29,9 @@ const Offers = () => {
         <button className=" px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">
           How it works
         </button>
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-5xl  text-center max-w-lg !leading-tight">
+        <h3 className="text-2xl font-semibold text-gray-800 lg:text-5xl  text-center max-w-lg !leading-tight">
           Amazing online offers are waiting for you!
-        </h1>
+        </h3>
         <span className="text-gray-400 font-semibold text-base md:text-xl text-center">
           In 3 simples steps, you can start saving!
         </span>

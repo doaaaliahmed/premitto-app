@@ -25,12 +25,12 @@ const Price = () => {
 
         <div className="p-4  max-w-3xl w-full">
           <div className="h-full p-6 rounded-lg border-[1px] border-gray-600 flex flex-col items-center relative overflow-hidden">
-            <h1 className="text-5xl text-gray-900flex items-center">
+            <legend className="text-5xl text-gray-900flex items-center">
               <span className="!tracking-tighter font-medium">72 SAR</span>
               <span className="text-lg mt-4 font-normal text-gray-600">
                 /month
               </span>
-            </h1>
+            </legend>
             <p className="w-11/12 text-center text-sm font-medium text-gray-600 mt-3 pb-6 !tracking-tighter border-b-[1px] border-gray-600">
               1 Year Premium membership
             </p>
