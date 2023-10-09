@@ -16,38 +16,38 @@ import slide4 from "../../../public/logo-image-4.png";
 import { motion } from "framer-motion";
 import { itemVariant, listVariant } from "../../../framer-variables";
 
-const posts = [
-  {
-    title: "Blog Title goes here",
-    desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-    img: slide3,
-    date: "Olivia Rhye * 20 Jan 2022",
-    href: "",
-  },
-  {
-    title: "Blog Title goes here",
-    desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-    img: slide2,
-    date: "Phoenix Baker * 19 Jan 2022",
-    href: "",
-  },
-  {
-    title: "Blog Title goes here",
-    desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-    img: slide1,
-    date: "Alec Whitten * 17 Jan 2022",
-    href: "",
-  },
-  {
-    title: "Blog Title goes here",
-    desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
-    img: slide4,
-    date: "Olivia Rhye * 20 Jan 2022",
-    href: "",
-  },
-];
-
 const Blog = () => {
+  const posts = [
+    {
+      title: "Blog Title goes here",
+      desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+      img: slide3,
+      date: "Olivia Rhye * 20 Jan 2022",
+      href: "",
+    },
+    {
+      title: "Blog Title goes here",
+      desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+      img: slide2,
+      date: "Phoenix Baker * 19 Jan 2022",
+      href: "",
+    },
+    {
+      title: "Blog Title goes here",
+      desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+      img: slide1,
+      date: "Alec Whitten * 17 Jan 2022",
+      href: "",
+    },
+    {
+      title: "Blog Title goes here",
+      desc: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+      img: slide4,
+      date: "Olivia Rhye * 20 Jan 2022",
+      href: "",
+    },
+  ];
+
   return (
     <section className=" bg-white md:my-28">
       <div className="mx-auto w-11/12 max-w-screen px-6 py-10 md:flex items-center justify-between">
@@ -69,7 +69,8 @@ const Blog = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-       className="relative w-11/12 max-w-screen	 mx-auto flex-items-center justify-center pb-4">
+        className="relative w-11/12 max-w-screen	 mx-auto flex-items-center justify-center pb-4"
+      >
         <div className="z-10 absolute bottom-0 left-0 w-fit flex items-center justify-center gap-4">
           <div className="grid place-items-center cursor-pointer hover:bg-gray-300 transition duration-200 ease-in review-swiper-button-prev w-14 h-14 rounded-full border-[1px] border-gray-400">
             <Image
