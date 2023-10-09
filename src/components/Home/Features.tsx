@@ -19,17 +19,18 @@ const Features = () => {
     {
       icon: feature2,
       title: "Retial & Services",
-      text: "Get discounts and pffers from your favourite restaurants & cafes! Let's enjoy the best experiences for your plate.",
+      text: "Be the first to discover and receive new offers on your favorite brands. Get the most out of your shopping!",
     },
     {
       icon: feature3,
       title: "Beauty & Wellness",
-      text: "Get discounts and pffers from your favourite restaurants & cafes! Let's enjoy the best experiences for your plate.",
+      text:"Pamper and take care of yourself with special deals for spas, beauty salons, health, fitness and more."
     },
     {
       icon: feature4,
       title: "TRavel & Hotels",
-      text: "Get discounts and pffers from your favourite restaurants & cafes! Let's enjoy the best experiences for your plate.",
+      text:"the world is yours! Access deals and offers and get the best hotels and travel packages."
+
     },
     {
       icon: feature5,
@@ -39,7 +40,7 @@ const Features = () => {
     {
       icon: feature6,
       title: "Online Shopping",
-      text: "Get discounts and pffers from your favourite restaurants & cafes! Let's enjoy the best experiences for your plate.",
+      text: "Optimize the way you recover, train, and sleep with daily reporting on mobile and desktop apps. Start training smarter, not harder.",
     },
   ];
 

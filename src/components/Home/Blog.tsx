@@ -99,9 +99,8 @@ const Blog = () => {
           }}
           modules={[Navigation]}
           breakpoints={{
-            // when window width is >= 768px
-            768: {
-              width: 768,
+            500: {
+              width: 500,
               slidesPerView: 2,
             },
             990: {

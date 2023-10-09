@@ -14,13 +14,13 @@ export const featuresList = [
     text: "mobile from the apple store. Please enter your details, top register, and get our exclusive one-year special discounts membership.",
   },
   {
-    title: "save more",
+    title: "Save more",
     text: "mobile from the apple store. Please enter your details, top register, and get our exclusive one-year special discounts membership.",
   },
 ];
 
 const Offers = () => {
-  const tabItems = ["Log in", "Search for deals", "save more"];
+  const tabItems = ["Log in", "Search for deals", "Save more"];
   const [selectedItem, setSelectedItem] = useState<number>(0);
 
   return (
@@ -36,9 +36,7 @@ const Offers = () => {
           In 3 simples steps, you can start saving!
         </span>
         <p className=" text-gray-500  max-w-xl text-center">
-          Our user-friendly mobile app lets you find deals and offers in-store
-          and promo codes to shop online with a sophisticated geo-location
-          system.
+          Log in to Premitto today and discover a uniqe way to save, with hundreds of in-store deals and offers and online promo codes to enjoy the pleasure of shopping
         </p>
         <Image src="/content.png" width={600} height={400} alt="content" />
       </div>
@@ -60,7 +58,7 @@ const Offers = () => {
               onClick={() => setSelectedItem(idx)}
               className={` max-sm:w-10/12 max-w-sm text-center py-2 md:border-t-2 ${
                 selectedItem == idx
-                  ? "gradient-border text-[#912980]"
+                  ? "gradient-border text-[#912980] hover:text-[#912980]"
                   : "md:border-transparent"
               } transition duration-300 ease-in-out`}
             >
@@ -68,11 +66,11 @@ const Offers = () => {
                 role="tab"
                 aria-selected={selectedItem == idx ? true : false}
                 aria-controls={`tabpanel-${idx + 1}`}
-                className="py-2.5 px-4  duration-150 text-xl lg:text-2xl hover:text-[#912980]  font-medium"
+                className="py-2.5 px-4  duration-150 text-xl lg:text-2xl   font-medium"
               >
                 {item.title}
               </legend>
-              <p className="!text-gray-600">{item.text}</p>
+              <p className="">{item.text}</p>
             </motion.li>
           ))}
         </motion.ul>
