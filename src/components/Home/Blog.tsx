@@ -27,179 +27,70 @@ const Blog = () => {
           shopping places.
         </p>
       </div>
-      <div>
+      <div className="w-[90%] max-w-5xl	  mx-auto flex-items-center justify-center">
+      
+        <div className="review-swiper-button-prev ">
+          <Image
+            src="/arrow-right-svgrepo-com.svg"
+            width={30}
+            height={30}
+            alt="prev-arrow"
+          />
+        </div>
+        <div className="review-swiper-button-next ">
+          <Image
+            src="/arrow-right-svgrepo-com.svg"
+            width={30}
+            height={30}
+            alt="next-arrow"
+          />
+        </div>
         <Swiper
-          initialSlide={0}
+          spaceBetween={20}
           slidesPerView={1}
-          navigation={{
-            prevEl: ".prev",
-            nextEl: ".next",
+            navigation={{
+            nextEl: ".review-swiper-button-next",
+            prevEl: ".review-swiper-button-prev",
           }}
-          grabCursor={true}
-          slideToClickedSlide={true}
-          modules={[Navigation]}
+          modules={[Pagination , Navigation]}
           breakpoints={{
-            600: {
-              centeredSlides: true,
-              initialSlide: 0,
+            // when window width is >= 768px
+            768: {
+              width: 768,
               slidesPerView: 2,
-              spaceBetween: 50,
             },
-            900: {
-              centeredSlides: true,
-              initialSlide: 0,
+            990: {
+              width: 990,
               slidesPerView: 3,
-              spaceBetween: 50,
             },
           }}
-          className="w-11/12 container"
+          className="!pb-[35px] w-full my-20"
         >
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
+          {technicalDivingExamples.map((tech) => (
+            <SwiperSlide
+              key={tech.title}
+              className=" overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-white rounded shadow-sm"
+            >
               <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
+                src={tech.img}
+                className="object-cover w-full h-64"
+                width={400}
+                height={400}
+                alt=""
               />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
+              <div className="p-5 border border-t-0  flex flex-col justify-start">
+                <legend
+                  aria-label="Category"
+                  title="Visit the East"
+                  className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+                >
+                  {tech.title}
+                </legend>
+                <TruncateString text={tech.text} />
               </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
-              <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
-              <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
-              <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
-              <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
-              </div>
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className="w-full group max-w-[20rem]">
-            <Link href="">
-              <Image
-                src="/logo-image-2.png"
-                width={200}
-                height={200}
-                alt="image 1"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-3 space-y-2">
-                <span className="block text-indigo-600 text-sm">
-                  Jan 4 2022
-                </span>
-                <h3 className="text-lg text-gray-800 duration-150 group-hover:text-indigo-600 font-semibold">
-                  What is SaaS? Software as a Service Explained
-                </h3>
-                <p className="text-gray-600 text-sm duration-150 group-hover:text-gray-800">
-                  Going into this journey, I had a standard therapy regimen,
-                  based on looking at the research literature. After I saw the
-                  movie, I started to ask other people.
-                </p>
-              </div>
-            </Link>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
-      </div>
     </section>
   );
 };
