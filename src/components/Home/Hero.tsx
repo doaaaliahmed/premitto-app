@@ -18,21 +18,21 @@ const Hero = () => {
             for the top best products and services. Your options are endless!
           </p>
           <div className=" flex items-center justify-start gap-3 ">
-            <Link href="" className=" block">
+            <Link href="" className=" block hover:scale-105 transition duration-200 ease">
               <Image
                 src="/Mobile-app-store-badge.png"
                 width={150}
                 height={150}
-                className="w-32 h-12"
+                className="w-32 h-12 "
                 alt="app store logo"
               />
             </Link>
-            <Link href="" className="mt-2 block">
+            <Link href="" className="mt-2 block hover:scale-105 transition duration-200 ease">
               <Image
                 src="/Mobile-google-play-badge.png"
                 width={150}
                 height={150}
-                className="w-32 h-14"
+                className="w-32 h-14 "
                 alt="app store logo"
               />
             </Link>

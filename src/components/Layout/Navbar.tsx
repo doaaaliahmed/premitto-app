@@ -2,23 +2,23 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PATHS } from "../../../paths";
 
 const Navbar= ()=>{
     const [open ,setOpen] = useState(false);
     const navList = [
-        {name: "Buy" , link:""},
+        {name: "Buy" , link:PATHS.BUY},
         {name: "Discover Deals" , link:""},
         {name: "How it works" , link:""},
         {name: "For partners" , link:""},
         {name: "Blog" , link:""},
-
     ]
 
     return(
 <nav  className="relative bg-white border-b-[1px] border-gray-900 mx-4">
     <div className="container px-6 md:px-20 py-3 mx-auto lg:flex">
         <div className="flex items-center justify-between">
-            <Link href="#">
+            <Link href="/">
                 <Image className="w-auto h-8 sm:h-10" src="/1.png" width={100} height={100} alt="premitto logo"/>
             </Link>
 

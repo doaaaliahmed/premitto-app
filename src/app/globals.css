@@ -16,23 +16,3 @@ body {
 }
 }
 
-.review-swiper-button-prev,
-.review-swiper-button-next {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0;
-
-  display: grid;
-  place-items: center;
-}
-
-.review-swiper-button-prev {
-  right: 8%;
-  transform: rotate(180deg);
-}
-
-.review-swiper-button-next {
-  right: 0;
-}
-

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PATHS } from "../../../paths";
 const Footer = () => {
   const footerNavs = [
     {
-      href: "",
+      href: PATHS.HOME,
       name: "Home",
     },
     {
@@ -53,8 +54,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="mt-6">
-            <div className="flex items-center gap-3 mt-3 sm:block">
-              <Link href="">
+            <div className="flex items-center gap-3 mt-3 sm:block ">
+              <Link href="" className="block hover:scale-105 transition duration-200 ease">
                 <Image
                   src="/Mobile app store badge (2).png"
                   width={100}
@@ -62,7 +63,7 @@ const Footer = () => {
                   alt="app store logo"
                 />
               </Link>
-              <Link href="" className="mt-0 block sm:mt-3">
+              <Link href="" className="mt-0 block sm:mt-3 hover:scale-105 transition duration-200 ease">
                 <Image
                   src="/Mobile app store badge.png"
                   width={100}
