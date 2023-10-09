@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Layout/Footer";
 import Navbar from "@/components/Layout/Navbar";
 import { motion } from "framer-motion";
-
 
 export default function RootLayout({
   children,
