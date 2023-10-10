@@ -6,6 +6,7 @@ import { isMobile } from "../../../framer-variables";
 const CTA = () => {
   return (
     <motion.div
+      id="for-partner"
         initial={{ x: !isMobile ? -800 : 0, opacity: !isMobile ? 0 : 1}}
         whileInView={{ x: 0, opacity: 1}}
         viewport={{ once: true }}

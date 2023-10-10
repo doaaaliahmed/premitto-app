@@ -45,7 +45,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="bg-white md:my-28">
+    <section id="discover-deals" className="bg-white md:my-28">
       <div className="container px-6 py-10 mx-auto">
         <button className="mb-10 px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">
           Discover the best discounts and offers nears you

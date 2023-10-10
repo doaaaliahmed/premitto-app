@@ -49,7 +49,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className=" bg-white md:my-28">
+    <section id="blog" className=" bg-white md:my-28">
       <div className="mx-auto w-11/12 max-w-screen px-6 py-10 md:flex items-center justify-between">
         <div className="flex flex-col gap-6">
           <button className="w-fit px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">

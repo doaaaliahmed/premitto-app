@@ -24,7 +24,7 @@ const Offers = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
 
   return (
-    <section className="bg-white md:my-28">
+    <section id="how-it-works" className="bg-white md:my-28">
       <div className="container px-6 py-10 mx-auto flex items-center flex-col justify-start gap-6">
         <button className=" px-6 py-3 text-sm font-normal tracking-wide text-white bg-gradient-to-l from-[#912980] via-[#d68253] to-[#fcb43a] hover:scale-105 transition duration-300 transform rounded-3xl focus:outline-none ">
           How it works
